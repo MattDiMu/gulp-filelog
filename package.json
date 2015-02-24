@@ -1,31 +1,27 @@
 {
-  "name": "gulp-filelog",
-  "version": "0.4.1",
-  "description": "A gulp plugin that logs out the file names in the stream. Displays a count and if empty. Useful for debugging.",
+  "name": "gulp-filelogger",
+  "version": "0.4.2",
+  "description": "A gulp plugin that logs out the file names in the stream. Displays if empty.",
   "keywords": [
     "gulpplugin",
     "filelog",
+		"filelogger",
     "debug",
     "count",
     "empty",
     "log",
     "gulp"
   ],
-  "homepage": "https://github.com/adamayres/gulp-filelog",
-  "bugs": "https://github.com/adamayres/gulp-filelog/issues",
+  "homepage": "https://github.com/MattDiMu/gulp-filelog",
+  "bugs": "https://github.com/MattDiMu/gulp-filelog/issues",
   "author": {
-    "name": "Adam Ayres",
-    "email": "magicaj@gmail.com",
-    "url": "https://github.com/adamayres"
+    "name": "Matthias Müller",
+    "url": "https://github.com/MattDiMu"
   },
   "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/adamayres/gulp-filelog.git"
-  },
-  "scripts": {
-    "test": "istanbul test _mocha --report html -- test/*.js --reporter spec",
-    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "dependencies": {
     "through2": "*",
@@ -35,9 +31,6 @@
     "coveralls": "*",
     "dateformat": "^1.0.8",
     "event-stream": "*",
-    "istanbul": "*",
-    "mocha": "*",
-    "mocha-lcov-reporter": "*",
     "should": "~4.0.4"
   },
   "engines": {
