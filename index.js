@@ -15,11 +15,10 @@ module.exports = function filelog (taskParam) {
     count++;
 
     if (taskParam) {
-      items.push(decorate('blue', taskParam));
+      items.push(decorate('cyan', taskParam));
     }
 
-    items.push(decorate('yellow', count));
-    items.push(decorate('cyan', file.path));
+    items.push(decorate('yellow', file.path));
 
     if (file.isNull()) {
       items.push(decorate('magenta', 'EMPTY'));
@@ -31,7 +30,6 @@ module.exports = function filelog (taskParam) {
     return callback();
   }, function (cb) {
     var task = taskParam ? decorate('blue', taskParam) + ' ' : '';
-    gutil.log(task + 'Found ' + decorate('yellow', count.toString()) + ' files.');
     cb();
   });
 };
