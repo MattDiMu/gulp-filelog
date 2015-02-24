@@ -12,8 +12,8 @@
     "log",
     "gulp"
   ],
-  "homepage": "https://github.com/MattDiMu/gulp-filelog",
-  "bugs": "https://github.com/MattDiMu/gulp-filelog/issues",
+  "homepage": "https://github.com/MattDiMu/gulp-filelogger",
+  "bugs": "https://github.com/MattDiMu/gulp-filelogger/issues",
   "author": {
     "name": "Matthias Müller",
     "url": "https://github.com/MattDiMu"
@@ -21,7 +21,7 @@
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/adamayres/gulp-filelog.git"
+    "url": "git://github.com/adamayres/gulp-filelogger.git"
   },
   "dependencies": {
     "through2": "*",
