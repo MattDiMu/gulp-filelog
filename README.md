@@ -7,10 +7,10 @@ FORKED FROM gulp-filelog, having some, imo, usefull formatting changes
 
 ## Usage
 
-First, install `gulp-filelog` as a development dependency:
+First, install `gulp-filelogger` as a development dependency:
 
 ```shell
-npm install --save-dev gulp-filelog
+npm install --save-dev gulp-filelogger
 ```
 
 Then, add it to your `gulpfile.js`:
@@ -18,7 +18,7 @@ Then, add it to your `gulpfile.js`:
 **Output the file names in the stream**
 
 ```javascript
-var filelog = require('gulp-filelog');
+var filelog = require('gulp-filelogger');
 
 gulp.src('./src/*.ext')
     .pipe(filelog())
@@ -28,7 +28,7 @@ gulp.src('./src/*.ext')
 **Output the file names in the stream with a task name identifier**
 
 ```javascript
-var filelog = require('gulp-filelog');
+var filelog = require('gulp-filelogger');
 
 gulp.src('./src/*.ext')
     .pipe(filelog('someTask'))
